@@ -5,7 +5,13 @@ const Tab = createBottomTabNavigator();
 const TabNavigator = () => {
   return (
     <Tab.Navigator>
-      <Tab.Screen name="HomeStack" component={HomeStack} />
+      <Tab.Screen
+        options={{
+          headerShown: false,
+        }}
+        name="HomeStack"
+        component={HomeStack}
+      />
     </Tab.Navigator>
   );
 };
